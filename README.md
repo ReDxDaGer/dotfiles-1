@@ -1,6 +1,6 @@
 # My dotfiles
 
-Well, these are my dotfiles (a few of them, atleast!)
+Well, these are my dotfiles (a few of them, atleast!). Reference video here: [Dreams of Autonomy](https://youtu.be/y6XCebnB9gs)
 
 ## Tools needed
 **`git`**
