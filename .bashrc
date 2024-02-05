@@ -6,6 +6,8 @@
 [[ $- != *i* ]] && return
 
 # Aliases
+alias up='docker compose up --build -d'
+alias down='docker compose down -v'
 alias ls='eza'
 alias ll='eza -al'
 alias yay='yay --noconfirm'
