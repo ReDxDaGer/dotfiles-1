@@ -37,9 +37,6 @@ export PATH=/home/ifkash/.local/bin:$PATH
 eval "$(oh-my-posh init bash --config ~/.config/omp/themes/catppuccin_mocha.omp.json)"
 . "$HOME/.cargo/env"
 
-# Show nitch output on terminal startup
-nitch
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
