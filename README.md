@@ -5,12 +5,12 @@ Well, these are my dotfiles (a few of them, atleast!). Reference video here: [Dr
 ## Tools needed
 **`git`**
 ```sh
-yay -S git
+paru -S git
 ```
 
 **`stow`**
 ```sh
-yay -S stow
+paru -S stow
 ```
 
 ## Install
