@@ -8,9 +8,10 @@
 # Aliases
 alias up='docker compose up --build -d'
 alias down='docker compose down -v'
-alias ls='eza'
-alias ll='eza -al'
+alias ls='eza --group-directories-first --icons'
+alias ll='eza -al --group-directories-first --icons'
 alias yay='yay --noconfirm'
+alias paru='paru --noconfirm'
 alias listpkgs='yay -Qe'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
