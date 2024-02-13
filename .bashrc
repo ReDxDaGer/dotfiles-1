@@ -14,6 +14,7 @@ alias yay='yay --noconfirm'
 alias paru='paru --noconfirm'
 alias listpkgs='yay -Qe'
 alias grep='grep --color=auto'
+alias fman='compgen -c | fzf | xargs tldr'
 PS1='[\u@\h \W]\$ '
 
 # >>> conda initialize >>>
@@ -43,3 +44,12 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+export EDITOR="nvim"
+
+# Some poetry?
+# Credits to @Spirizeon
+echo "From the moment I understood the weakness of GUI, it disgusted me.
+I craved the strength and certainty of the shell. I aspire to the purity of the Blessed Terminal.
+You kind cling to the GUI, as if it will not decay and fail you.
+One day the crude biomass that you call Windows will wither, and you will beg my kind to save you.
+But I am already saved, for the Terminal is immortal!"
