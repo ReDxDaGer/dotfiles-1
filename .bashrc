@@ -16,6 +16,7 @@ alias listpkgs='yay -Qe'
 alias grep='grep --color=auto'
 alias fman='compgen -c | fzf | xargs tldr'
 alias z='zoxide'
+alias cat='bat -p'
 PS1='[\u@\h \W]\$ '
 
 # >>> conda initialize >>>
