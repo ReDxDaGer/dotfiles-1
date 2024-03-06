@@ -15,6 +15,7 @@ alias paru='paru --noconfirm'
 alias listpkgs='yay -Qe'
 alias grep='grep --color=auto'
 alias fman='compgen -c | fzf | xargs tldr'
+alias z='zoxide'
 PS1='[\u@\h \W]\$ '
 
 # >>> conda initialize >>>
