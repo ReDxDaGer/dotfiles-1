@@ -22,7 +22,8 @@ PS1='[\u@\h \W]\$ '
 # NixOS stuff
 alias config='nvim /etc/nixos/configuration.nix'
 alias rebuild='sudo nixos-rebuild switch'
-alias prune='nix-collect-garbage --delete-old'
+alias gc='nix-collect-garbage --delete-old'
+alias old='sudo nix-env --list-generations'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
