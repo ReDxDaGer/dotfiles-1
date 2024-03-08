@@ -25,6 +25,12 @@ alias rebuild='sudo nixos-rebuild switch'
 alias gc='nix-collect-garbage --delete-old'
 alias old='sudo nix-env --list-generations'
 
+# Python stuff
+alias pyenv='python -m venv .venv'
+alias venv='source .venv/bin/activate'
+alias pipr='python -m pip install -r requirements.txt'
+alias freeze='python -m pip freeze > requirements.txt'
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ifkash/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
