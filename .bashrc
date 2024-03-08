@@ -19,6 +19,11 @@ alias z='zoxide'
 alias cat='bat -p'
 PS1='[\u@\h \W]\$ '
 
+# NixOS stuff
+alias config='nvim /etc/nixos/configuration.nix'
+alias rebuild='sudo nixos-rebuild switch'
+alias prune='nix-collect-garbage --delete-old'
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ifkash/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
