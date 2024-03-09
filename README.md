@@ -23,5 +23,5 @@ stow --adopt .
 <img src="./screen-1.png" />
 <img src="./screen-2.png" />
 
-## Wallpaapers
+## Wallpapers
 [Wallpapers here](./Pictures/Wallpapers)
