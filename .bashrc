@@ -31,27 +31,15 @@ alias venv='source .venv/bin/activate'
 alias pipr='python -m pip install -r requirements.txt'
 alias freeze='python -m pip freeze > requirements.txt'
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/ifkash/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/ifkash/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/ifkash/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/ifkash/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# Editing bashrc stuff
+alias bashrc='nvim ~/.bashrc'
+alias src='source ~/.bashrc'
 
 # Add ~/.local/bin to PATH
 export PATH=/home/ifkash/.local/bin:$PATH
 
 # Fancy shell prompt
-eval "$(oh-my-posh init bash --config ~/.config/omp/themes/catppuccin_mocha.omp.json)"
-. "$HOME/.cargo/env"
+eval "$(oh-my-posh init bash --config ~/.config/omp/themes/lambda.omp.json)"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -59,11 +47,3 @@ export PATH=$BUN_INSTALL/bin:$PATH
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export EDITOR="nvim"
-
-# Some poetry?
-# Credits to @Spirizeon
-echo "From the moment I understood the weakness of GUI, it disgusted me.
-I craved the strength and certainty of the shell. I aspire to the purity of the Blessed Terminal.
-You kind cling to the GUI, as if it will not decay and fail you.
-One day the crude biomass that you call Windows will wither, and you will beg my kind to save you.
-But I am already saved, for the Terminal is immortal!"
