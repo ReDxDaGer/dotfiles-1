@@ -30,3 +30,6 @@ stow --adopt .
 ## Screenshots
 <img src="./screen-1.png" />
 <img src="./screen-2.png" />
+
+## Wallpaapers
+[Wallpapers here](./Pictures/Wallpapers)
