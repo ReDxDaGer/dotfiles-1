@@ -135,7 +135,7 @@ user_pref("pdfjs.migrationVersion", 2);
 user_pref("places.database.lastMaintenance", 1709887780);
 user_pref("privacy.purge_trackers.date_in_cookie_database", "0");
 user_pref("privacy.purge_trackers.last_purge", "1709974385673");
-user_pref("privacy.sanitize.pending", "[{\"id\":\"newtab-container\",\"itemsToClear\":[],\"options\":{}}]");
+user_pref("privacy.sanitize.pending", "[]");
 user_pref("security.sandbox.content.tempDirSuffix", "daafc145-6e93-4207-830e-db69db8400b1");
 user_pref("services.settings.blocklists.addons-bloomfilters.last_check", 1709978694);
 user_pref("services.settings.blocklists.gfx.last_check", 1709978694);
