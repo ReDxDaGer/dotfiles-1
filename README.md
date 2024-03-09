@@ -3,15 +3,7 @@
 Well, these are my dotfiles (a few of them, atleast!). Reference video here: [Dreams of Autonomy](https://youtu.be/y6XCebnB9gs)
 
 ## Tools needed
-**`git`**
-```sh
-paru -S git
-```
-
-**`stow`**
-```sh
-paru -S stow
-```
+`git` `stow`
 
 ## Install
 1. Clone the repo
