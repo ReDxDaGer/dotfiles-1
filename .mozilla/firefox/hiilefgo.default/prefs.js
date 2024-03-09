@@ -82,7 +82,7 @@ user_pref("distribution.iniFile.exists.value", true);
 user_pref("distribution.nixos.bookmarksProcessed", true);
 user_pref("doh-rollout.doneFirstRun", true);
 user_pref("doh-rollout.home-region", "IN");
-user_pref("dom.push.userAgentID", "2dd48f114da5460ca821c67710766a59");
+user_pref("dom.push.userAgentID", "9ecd47f77b8244228bbaab8a7a0d5568");
 user_pref("extensions.activeThemeID", "firefox-compact-dark@mozilla.org");
 user_pref("extensions.blocklist.pingCountVersion", 0);
 user_pref("extensions.databaseSchema", 35);
