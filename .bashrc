@@ -34,6 +34,7 @@ alias freeze='python -m pip freeze > requirements.txt'
 # Editing bashrc stuff
 alias bashrc='nvim ~/.bashrc'
 alias src='source ~/.bashrc'
+alias migrate='stow --adopt ~/dotfiles/'
 
 # Add ~/.local/bin to PATH
 export PATH=/home/ifkash/.local/bin:$PATH
