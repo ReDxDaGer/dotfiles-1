@@ -1,0 +1,6 @@
+print(bold().."\n\n")
+print(white()     ..[[   _  ___      ____  ____]])
+print(cyanBright()..[[  / |/ (_)_ __/ __ \/ __/]])
+print(cyan()      ..[[ /    / /\ \ / /_/ /\ \  ]])
+print(blueBright()..[[/_/|_/_//_\_\\____/___/  ]])
+print(reset())

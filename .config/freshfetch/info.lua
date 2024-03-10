@@ -1,53 +1,54 @@
-function round(x)
-    return x + 0.5 - (x + 0.5) % 1
-end
 
 -- user@host
 if context ~= nil then
 	print(""
 		..bold()
-		..distroColors[1]
+		..white()
 		..context.user
-		..reset()
-		..bold()
+		..blue()
 		.."@"
-		..distroColors[2]
 		..context.host
 		..reset())
-end
-
--- OS
-if distro ~= nil then
-	print(""
-		..bold()
-		..distroColors[2]
-		.."OS"
-		..reset()
-		..": "
-		..distro.shortname
-		.." "
-		..distro.architecture)
 end
 
 -- Host
 if host ~= nil then
 	print(""
+		.." 󰇅  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Host"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 10)
 		..host.model)
+end
+
+-- OS
+if distro ~= nil then
+	print(""
+		.." 󰋘  "
+		..bold()
+		..blue()
+		.."OS"
+		..reset()
+		..": "
+		..string.rep(" ", 16 - 8)
+		..distro.shortname
+		.." "
+		..distro.architecture)
 end
 
 -- Kernel
 if kernel ~= nil then
 	print(""
+		.." 󰌽  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Kernel"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 12)
 		..kernel.name
 		.." "
 		..kernel.version)
@@ -80,13 +81,15 @@ if uptime ~= nil then
 		comma()
 		output = output..uptime.seconds.." second"..s(uptime.seconds)
 	end
-
+	
 	print(""
+		.." 󰖉  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Uptime"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 12)
 		..output)
 end
 
@@ -118,22 +121,26 @@ if packageManagers ~= nil then
 		output = "0"
 	end
 	print(""
+		.." 󰏗  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Packages"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 14)
 		..output)
 end
 
 -- Shell
 if shell ~= nil then
 	print(""
+		.." 󰞷  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Shell"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 11)
 		..shell.name
 		.." "
 		..shell.version)
@@ -143,8 +150,9 @@ end
 if resolution ~= nil then
 	if resolution.refresh ~= nil then
 		print(""
+			.." 󰍹  "
 			..bold()
-			..distroColors[2]
+			..blue()
 			.."Resolution"
 			..reset()
 			..": "
@@ -152,12 +160,13 @@ if resolution ~= nil then
 			.."x"
 			..resolution.height
 			.." @ "
-			..round(resolution.refresh)
+			..resolution.refresh
 			.."Hz")
 	else
 		print(""
+			.." 󰍹  "
 			..bold()
-			..distroColors[2]
+			..blue()
 			.."Resolution"
 			..reset()
 			..": "
@@ -170,11 +179,13 @@ end
 -- DE
 if de ~= nil then
 	print(""
+		.." 󱕅  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."DE"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 8)
 		..de.name
 		.." "
 		..de.version)
@@ -183,11 +194,13 @@ end
 -- WM
 if wm ~= nil then
 	print(""
+		.." 󱂬  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."WM"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 8)
 		..wm)
 end
 
@@ -197,11 +210,13 @@ if cpu ~= nil then
 		and ""..(cpu.freq / 1000).."GHz"
 		or  ""..cpu.freq.."MHz"
 	print(""
+		.." 󰘚  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."CPU"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 9)
 		..cpu.name
 		.." ("
 		..cpu.cores
@@ -210,11 +225,12 @@ if cpu ~= nil then
 end
 
 -- GPU
-if gpus ~= nil then
+--[[if gpus ~= nil then
 	if #gpus ~= 1 then
 		print(""
+			.." 󰢮  "
 			..bold()
-			..distroColors[2]
+			..blue()
 			.."GPUs"
 			..reset()
 			..": ")
@@ -223,25 +239,38 @@ if gpus ~= nil then
 		end
 	else
 		print(""
+			.." 󰢮  "
 			..bold()
-			..distroColors[2]
+			..blue()
 			.."GPU"
 			..reset()
 			..": "
+			..string.rep(" ", 16 - 9)
 			..gpus[1].brand
 			.." "
 			..gpus[1].name)
 	end
-end
+end]]--
+print(""
+	.." 󰢮  "
+	..bold()
+	..blue()
+	.."GPU"
+	..reset()
+	..": "
+	..string.rep(" ", 16 - 9)
+	.."MSI ARMOR Radeon RX 570")
 
 -- Motherboard
 if motherboard ~= nil then
 	print(""
+		.." 󰐿  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Board"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 11)
 		..motherboard.vendor
 		.." "
 		..motherboard.name)
@@ -251,11 +280,13 @@ end
 if memory ~= nil then
 	-- This memory math is probably inaccurate, but idk how to make it right ;-;
 	print(""
+		.." 󰍛  "
 		..bold()
-		..distroColors[2]
+		..blue()
 		.."Memory"
 		..reset()
 		..": "
+		..string.rep(" ", 16 - 12)
 		..math.floor(memory.used / 1024)
 		.."MB / "
 		..math.floor(memory.max / 1024)
@@ -265,23 +296,23 @@ end
 -- Palette
 print("")
 print(""
-	..blackBg()  .."   "
-	..redBg()    .."   "
-	..greenBg()  .."   "
-	..yellowBg() .."   "
-	..blueBg()   .."   "
-	..magentaBg().."   "
-	..cyanBg()   .."   "
-	..whiteBg()  .."   "
+	..blackBg()  .."  "
+	..redBg()    .."  "
+	..greenBg()  .."  "
+	..yellowBg() .."  "
+	..blueBg()   .."  "
+	..magentaBg().."  "
+	..cyanBg()   .."  "
+	..whiteBg()  .."  "
 	..reset())
 print(""
-	..blackBrightBg()  .."   "
-	..redBrightBg()    .."   "
-	..greenBrightBg()  .."   "
-	..yellowBrightBg() .."   "
-	..blueBrightBg()   .."   "
-	..magentaBrightBg().."   "
-	..cyanBrightBg()   .."   "
-	..whiteBrightBg()  .."   "
+	..blackBrightBg()  .."  "
+	..redBrightBg()    .."  "
+	..greenBrightBg()  .."  "
+	..yellowBrightBg() .."  "
+	..blueBrightBg()   .."  "
+	..magentaBrightBg().."  "
+	..cyanBrightBg()   .."  "
+	..whiteBrightBg()  .."  "
 	..reset())
 

@@ -1,8 +1,10 @@
-print(""..save())
+print(save())
+
+print(down(math.floor((artHeight / 8)) - 2))
 
 print("  "..string.gsub(art, "\n", "\n  "))
 
-print(""..up(artHeight))
+print(up(artHeight + math.floor(artHeight / 8)))
 
 print(""
 	..right(artWidth + 4)
@@ -10,12 +12,8 @@ print(""
 		"\n",
 		"\n"..right(artWidth + 4)))
 
-print(""..restore())
+print(restore())
 
-if infoHeight > artHeight then
-	print(""..down(infoHeight))
-else
-	print(""..down(artHeight))
-end
+print(""..down(infoHeight - 1))
 
 
