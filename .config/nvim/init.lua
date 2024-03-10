@@ -60,6 +60,9 @@ vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 -- Ctrl + f to live grep through files (Search for some code across files)
 vim.keymap.set("n", "<C-f>", builtin.live_grep, {})
 
+-- Ctrl + n to show the file tree using neo-tree
+vim.keymap.set("n", "<C-n>", "<Cmd>Neotree toggle<CR>", {})
+
 -- Treesitter config
 local config = require("nvim-treesitter.configs")
 config.setup({
