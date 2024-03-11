@@ -66,7 +66,7 @@ vim.keymap.set("n", "<C-n>", "<Cmd>Neotree toggle<CR>", {})
 -- Treesitter config
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_installed = { "awk", "bash", "c", "cpp", "css", "csv", "dockerfile", "lua", "vim", "vimdoc", "go", "java", "javascript", "jsdoc", "json", "html", "latex", "nix", "python", "rust", "sql", "tsv", "typescript", "typst", "vue", "yaml" },
+  ensure_installed = { "awk", "bash", "c", "cpp", "css", "csv", "dockerfile", "lua", "vim", "vimdoc", "go", "java", "javascript", "jsdoc", "json", "html", "latex", "nix", "python", "rust", "sql", "svelte", "tsv", "typescript", "typst", "vue", "yaml" },
   highlight = { enable = true },
   indent = { enable = true },
 })
