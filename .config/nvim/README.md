@@ -1,4 +1,5 @@
 # `ender.nvim`
+> All thanks to [typecraft's neovim series](https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn)
 
 ## Keybinds
 
