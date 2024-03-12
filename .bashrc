@@ -36,6 +36,10 @@ alias bashrc='nvim ~/.bashrc'
 alias src='source ~/.bashrc'
 alias migrate='stow --adopt ~/dotfiles/'
 
+# Docker aliases
+alias up='docker compose up --build -d'
+alias down='docker compose down -v'
+
 # Add ~/.local/bin to PATH
 export PATH=/home/ifkash/.local/bin:$PATH
 
