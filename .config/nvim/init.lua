@@ -1,11 +1,3 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-
--- Set leader key to spacebar
-vim.g.mapleader = " "
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -20,6 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
+
+-- Vim options
+require("vim-options")
 
 -- Lazy.nvim to load plugins
 require("lazy").setup("plugins")
