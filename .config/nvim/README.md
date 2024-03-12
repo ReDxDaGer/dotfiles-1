@@ -22,3 +22,23 @@ Ctrl + n
 ```bash
 Ctrl + w + { h, j, k, l }
 ```
+
+### To view LSP info
+```vim
+:LspInfo
+```
+
+### View LSP docs
+```vim
+:h vim.lsp.buf
+```
+
+### To autocomplete
+```bash
+Ctrl + x, Ctrl + o
+```
+
+### To open documentation (put cursor on a word)
+```bash
+Shift + k
+```
